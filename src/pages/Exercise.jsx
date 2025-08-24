@@ -1,24 +1,27 @@
-
-import GridExc from '../excersices/GridExc';
+import { Link, Outlet } from "react-router-dom";
 function Exercise() {
   return (
     <div className="page">
-      <h1>Exercises page</h1>
-      <button className="nav-item">taxt</button>
-      <div className="content-card">
-        <h2>Our Story</h2>
-        <p>
-          We are a passionate team dedicated to creating amazing web experiences 
-          using modern technologies like React and React Router.
-        </p>
-        <h3>Our Mission</h3>
-        <p>
-          To provide high-quality, user-friendly applications that make a difference 
-          in people's lives.
-        </p>
-      </div>
-    </div>
-  );
+<h1>Exercises page</h1>
+<nav className="navbar">
+<ul className="nav-menu">
+<li className="nav-item">
+<Link to="/exercise/grid" className="nav-link">
+grid-excercise
+</Link>
+</li>
+<li className='nav-item'>
+  <Link to="/exercise/balls" className="nav-link">
+  balls-move
+  </Link>
+</li>
+</ul>
+</nav>
+<div className="content-card">
+<Outlet />
+</div>
+</div>
+);
 }
 
 export default Exercise;
