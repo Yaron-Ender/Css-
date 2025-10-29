@@ -1,5 +1,6 @@
-@import './base.css';
-@import './varibles.css';
-@import './layout.css';
-@import './nav.css';
-@import './balls-move.css';
+@import "./base.css";
+@import "./varibles.css";
+@import "./layout.css";
+@import "./nav.css";
+@import "./sidebarNav.css";
+@import "./tabNav.css";

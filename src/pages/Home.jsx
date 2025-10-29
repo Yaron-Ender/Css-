@@ -6,7 +6,7 @@ function Home() {
     <div className="page">
       <Outlet />
       <h1>Welcome to Home Page</h1>
-      <p>This is the home page of our React Router application.</p>
+      <p>This is the home page of Css project.</p>
       <div className="content-card">
         <h2>Getting Started</h2>
         <p>Navigate through the different pages using the navigation menu above.</p>

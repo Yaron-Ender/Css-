@@ -1,11 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 
-function Nav() {
+function MainNav() {
   const location = useLocation();
 
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/exercise', label: 'Exercises' },
+    { path: '/subjects', label: 'Subjects' },
     { path: '/services', label: 'Services' },
     { path: '/contact', label: 'Contact' }
   ];
@@ -33,4 +33,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default MainNav;
