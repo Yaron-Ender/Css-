@@ -1,4 +1,5 @@
 // Central data structure for all subjects, principles, and projects
+import Drop from "../projects/shadowing/drop/Drop";
 export const subjectsData = {
   shadowing: {
     title: "Shadowing",
@@ -15,9 +16,10 @@ export const subjectsData = {
     ],
     projects: [
       {
-        slug: "depth-cards",
+        slug: "drop",
         title: "3D Depth Cards",
         description: "Cards with realistic shadows creating depth",
+        component: Drop,
       },
       {
         slug: "hover-effects",

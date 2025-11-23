@@ -1,0 +1,123 @@
+.subjects-container{
+  /* Subjects Page Layout */
+  width: 100%;
+height:100%;
+  display:flex;
+  & .subjects-page {
+ width:100%;
+ margin-left:270px;
+}
+.subject-content {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    /*in side SubjectsLandingLayout*/
+    .subject-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height:40px;
+    text-align: center;
+  }
+  
+  .subject-placeholder h2 {
+    color: var(--text-secondary, #666);
+  }
+
+}
+
+/* Principles */
+.principles-container {
+    padding: 1.5rem;
+
+    background-color: #333;
+  }
+  .principles-list {
+    display: grid;
+    gap:2rem;
+    margin-top: 1rem;
+  }
+  .principle-card {
+    padding: 1rem;
+    background: var(--card-bg, #fff);
+    color:black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    & > div:nth-child(1){
+      display: flex;
+    
+   align-items:center;
+   & h3{
+  margin: 0 0.8rem 0 0;;
+    color: var(--primary-color, #007bff);  
+   }
+   & svg{
+    transition: transform 0.3s ease;
+    &.open{
+      transform: rotate(180deg);
+    }
+   }
+    }
+  }
+  
+  /*this class is used inside the contnet comp of every projet*/
+  .principle-content{
+    display: flex;
+    flex-direction: column;
+& h3{
+  color: chocolate;
+}
+  }
+  /* Projects */
+  .projects-list {
+    padding: 1.5rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .project-card {
+    font-size:1.5rem;
+    display: block;
+    padding: 1.5rem;
+    background: var(--card-bg, #fff);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: var(--text-color, #333);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  
+  .project-content {
+    color: black;
+    background: var(--card-bg, #fff);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .subjects-page {
+      flex-direction: column;
+      padding-left: 0;
+    }
+  
+    .subject-content {
+      padding: 1rem;
+    }
+  }
+  

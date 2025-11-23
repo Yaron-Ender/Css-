@@ -1,8 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-
 const TabNav = ({ subjectSlug }) => {
   const location = useLocation();
-  console.log(location);
   const isPrinciplesActive =
     location.pathname.endsWith("/principles") ||
     location.pathname === `/subjects/${subjectSlug}`;
@@ -11,7 +9,7 @@ const TabNav = ({ subjectSlug }) => {
     <nav className="tab-nav">
       <div className="tab-list">
         <Link
-          to={`/subjects/${subjectSlug}/principles`}
+          to={`/subjects/${subjectSlug}`}
           className={`tab ${isPrinciplesActive ? "active" : ""}`}
         >
           Principles

@@ -1,0 +1,64 @@
+
+.main-drop{
+    height:90vh;
+    background:#edeeed;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    }
+    .drops-container{
+    padding-top:7rem;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    
+    }
+    .drop{
+    position:absolute;
+    width:150px;
+    height:150px;
+    background:transparent;
+    border-radius:47% 53% 32% 68% / 50% 37% 63% 50%;
+    box-shadow:inset 10px 10px 10px rgba(0,0,0,0.05),
+               15px 25px 10px rgba(0,0,0,0.1),
+               15px 15px 20px rgba(0,0,0,0.05),
+               inset -10px -10px 15px rgba(255,255,255,0.9);
+    }
+    .drop::before{
+    position:absolute;
+    content:"";
+    width:20px;
+    height:20px;
+    top:25px;
+    left:35px;
+    background:#fff;
+    border-radius:56% 44% 68% 32% / 30% 41% 59% 70% ;
+    }
+    .drop::after{
+      position:absolute;
+      content:"";
+      width:10px;
+      height:10px;
+      top:25px;
+      left:65px;
+      background:#fff;
+      border-radius:56% 44% 68% 32% / 64% 50% 50% 36% ;
+      }
+      .drop:nth-child(2){
+      transform:scale(0.5) skew(5deg,10deg) translate(120px,10px);
+      box-shadow:inset 10px 10px 10px rgba(0,0,0,0.05),
+               10px 15px 10px rgba(0,0,0,0.1),
+               10px 10px 20px rgba(0,0,0,0.05),
+               inset -10px -10px 15px rgba(255,255,255,0.9);
+      }
+      .drop:nth-child(3){
+        transform:scale(0.7) skew(-5deg,-1deg) translate(-120px,200px);
+        }
+        .drop:nth-child(4){
+          transform:scale(0.35) skew(-5deg,-1deg) translate(-220px,-300px);
+          }
+    
+          .summery{
+      /* align-self: flex-start; */
+      border-bottom:2px solid #777;
+          }

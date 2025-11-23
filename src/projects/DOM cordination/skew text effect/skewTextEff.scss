@@ -1,0 +1,44 @@
+
+.skew-text-container{
+position: relative;
+width:100%;
+height:600px;
+height:100vh;
+overflow: hidden;
+background-color:#222;
+border: 3px solid red;
+& .text-box{
+position:absolute;
+width:100%;
+height:600px;
+height:100vh;
+overflow:hidden;
+background:#333;
+
+clip-path: polygon(0 0,50% 0,50% 100%,0% 100%);
+}
+& h2{
+    position:absolute;
+    border:3px solid pink;
+    width:100%;
+    text-align: center;
+    font-size:12rem;
+    line-height:1em;
+    color: #0488f5;
+    -webkit-text-stroke:0px #0876cf;
+}
+& :not(.text-box h2){
+    -webkit-text-stroke:2px #0876cf;
+    color: transparent;
+}
+& .skew1{
+    position:relative;
+    // top:50px;
+    transform:skewY(20deg);
+}
+& .skew2{
+    position:relative;
+    // top:50px;
+    transform:skewY(-20deg);
+}
+}

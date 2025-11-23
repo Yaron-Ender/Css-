@@ -5,13 +5,13 @@ function MainNav() {
 
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/subjects', label: 'Subjects' },
+    { path: '/css', label: 'Css' },
     { path: '/services', label: 'Services' },
     { path: '/contact', label: 'Contact' }
   ];
 
   return (
-    <nav className="navbar">
+    <nav className="navbar-main">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           MyApp

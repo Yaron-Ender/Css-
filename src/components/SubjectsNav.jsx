@@ -3,6 +3,9 @@ import { Link, useParams } from "react-router-dom";
 const SubjectsNav = () => {
   const navSubjects = [
     { slug: "shadowing", label: "Shadowing" },
+    { slug: "animation", label: "Animation" },
+    { slug: "DOMcordination", label: "DOM Cordination" },
+    { slug: "general", label: "General" },
     { slug: "box-model", label: "Box Model" },
     { slug: "flexbox", label: "Flexbox" },
     { slug: "grid", label: "Grid" },
@@ -21,7 +24,7 @@ const SubjectsNav = () => {
         {navSubjects.map((item) => (
           <li key={item.slug}>
             <Link
-              to={`/subjects/${item.slug}`}
+              to={`/css/${item.slug}`}
               className={`nav-link ${subject === item.slug ? "active" : ""}`}
             >
               {item.label}
