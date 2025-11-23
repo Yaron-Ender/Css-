@@ -1,6 +1,6 @@
-import SpiralAnimation from '../projects/animation/spiral/SpiralAnimation';
-import SpiralAnimationContent from '../projects/animation/spiral/SpiralAnimationContent';
-import spiralImg from '../projects/animation/spiral/spiral.png'
+import SpiralAnimation from '../css-projects/animation/spiral/SpiralAnimation';
+import SpiralAnimationContent from '../css-projects/animation/spiral/SpiralAnimationContent';
+import spiralImg from '../css-projects/animation/spiral/spiral.png'
 export const animationData = {
   animation: {
     title: "Animation",

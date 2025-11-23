@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import SubjectsNav from "../components/SubjectsNav";
+import CssSubjectsNav from "../components/CssSubjectsNav";
 import TabNav from "../components/TabNav";
 import { useParams } from "react-router-dom";
 //for general projects
@@ -15,7 +15,7 @@ const CssSubjects = () => {
   // }
   return (
     <div className="subjects-container">
-      <SubjectsNav />
+      <CssSubjectsNav />
       <div className="subjects-page">
         {!subject && (
           <div className="subject-content">

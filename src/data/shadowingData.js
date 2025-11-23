@@ -1,12 +1,12 @@
 // Central data structure for all subjects, principles, and projects
-import Drop from "../projects/shadowing/drop/Drop";
-import dropImage from "../projects/shadowing/drop/drop.png"
-import CoffieCup from "../projects/shadowing/coffie-cup/CoffieCup"
-import CoffieCupContent from "../projects/shadowing/coffie-cup/CoffieCupContent";
-import coffieCupImg from "../projects/shadowing/coffie-cup/CoffieCup.png";
-import Clock from "../projects/shadowing/clock/Clock"
-import ClockContent from "../projects/shadowing/clock/ClockContent";
-import clockImg from '../projects/shadowing/clock/clock.png'
+import Drop from "../css-projects/shadowing/drop/Drop";
+import dropImage from "../css-projects/shadowing/drop/drop.png"
+import CoffieCup from "../css-projects/shadowing/coffie-cup/CoffieCup"
+import CoffieCupContent from "../css-projects/shadowing/coffie-cup/CoffieCupContent";
+import coffieCupImg from "../css-projects/shadowing/coffie-cup/CoffieCup.png";
+import Clock from "../css-projects/shadowing/clock/Clock"
+import ClockContent from "../css-projects/shadowing/clock/ClockContent";
+import clockImg from '../css-projects/shadowing/clock/clock.png'
 // Import other images here as you add them
 // import hoverEffectsImage from "./images/hover-effects.png";
 

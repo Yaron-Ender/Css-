@@ -1,5 +1,5 @@
 // Central data structure for all subjects, principles, and projects
-import Drop from "../projects/shadowing/drop/Drop";
+import Drop from "../css-projects/shadowing/drop/Drop";
 export const subjectsData = {
   shadowing: {
     title: "Shadowing",

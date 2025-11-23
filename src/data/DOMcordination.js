@@ -1,9 +1,9 @@
-import MovingTextShadow from "../projects/DOM cordination/moving text shadow/MovingTextShadow";
-import textShadowImg from "../projects/DOM cordination/moving text shadow/text-shadow.png";
-import MovingTextShadowExplanation from "../projects/DOM cordination/moving text shadow/MovingTextShadowExplanation";
+import MovingTextShadow from "../css-projects/DOM cordination/moving text shadow/MovingTextShadow";
+import textShadowImg from "../css-projects/DOM cordination/moving text shadow/text-shadow.png";
+import MovingTextShadowExplanation from "../css-projects/DOM cordination/moving text shadow/MovingTextShadowExplanation";
 //skew text effect
-import SkewTextEffect from "../projects/DOM cordination/skew text effect/SkewTextEffect";
-import skewTextEffectImg from "../projects/DOM cordination/skew text effect/skewTextEffectImg.png"
+import SkewTextEffect from "../css-projects/DOM cordination/skew text effect/SkewTextEffect";
+import skewTextEffectImg from "../css-projects/DOM cordination/skew text effect/skewTextEffectImg.png"
 
 export const DOMcordinationData = {
   DOMcordination: {

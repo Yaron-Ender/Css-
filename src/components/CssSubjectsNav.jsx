@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 
-const SubjectsNav = () => {
+const CssSubjectsNav = () => {
   const navSubjects = [
     { slug: "shadowing", label: "Shadowing" },
     { slug: "animation", label: "Animation" },
@@ -36,4 +36,4 @@ const SubjectsNav = () => {
   );
 };
 
-export default SubjectsNav;
+export default CssSubjectsNav;
