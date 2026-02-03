@@ -1,14 +1,19 @@
 // Central data structure for all subjects, principles, and projects
 import Drop from "../css-projects/shadowing/drop/Drop";
 import dropImage from "../css-projects/shadowing/drop/drop.png"
+//coffie cup
 import CoffieCup from "../css-projects/shadowing/coffie-cup/CoffieCup"
 import CoffieCupContent from "../css-projects/shadowing/coffie-cup/CoffieCupContent";
 import coffieCupImg from "../css-projects/shadowing/coffie-cup/CoffieCup.png";
+//clock
 import Clock from "../css-projects/shadowing/clock/Clock"
 import ClockContent from "../css-projects/shadowing/clock/ClockContent";
 import clockImg from '../css-projects/shadowing/clock/clock.png'
+//glowing card
+import GlowingCard from "../css-projects/shadowing/glowing card/GlowingCard";
+import GlowingCardContent from "../css-projects/shadowing/glowing card/GlowingCardContent";
+import glowingCardImg from '../css-projects/shadowing/glowing card/glowingCardImg.png'
 // Import other images here as you add them
-// import hoverEffectsImage from "./images/hover-effects.png";
 
 export const shadowingData = {
   shadowing: {
@@ -39,6 +44,13 @@ export const shadowingData = {
         content:ClockContent,
         link:'https://www.youtube.com/watch?v=LqtmWBYkhDY&list=PL7BfmKWHmO83NYzVE5LJwbloqtEa9oHaN'
       },
+      {
+        id:"5",
+        title: "Glowing Card",
+        description: "Creating a glowing card with filter:blur",
+        content:GlowingCardContent,
+        link:''
+      }
     ],
     projects: [
       {
@@ -65,6 +77,14 @@ export const shadowingData = {
         img:clockImg,
         backgroudSize:'contain',
         component:Clock,
+        },
+        {
+          slug: "glowing-card",
+          title: "Glowing Card",
+          description: "Creating a glowing card with filter:blur ",
+          img:glowingCardImg,
+          backgroudSize:'contain',
+          component:GlowingCard,
         },
     ],
   },

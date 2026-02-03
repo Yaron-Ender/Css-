@@ -1,0 +1,46 @@
+.glowing-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+& .container{
+   width:100%;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+padding:50px;
+gap:50px;  
+& .box{
+ position: relative;
+  min-width:min(280px,50%);
+  height:360px;
+  background: #fff;
+  border-radius:20px;
+    &::before,&::after{
+    position: absolute;
+    content:"";
+    inset:0;
+    filter: blur(30px);
+    } 
+    & b{
+      position: absolute;
+  display:block;
+  inset:4px;
+  border-radius:16px;
+  background:rgba(0,0,0,0.7); 
+  z-index:2;    
+    }
+}
+& .box:nth-child(1)::before,& .box:nth-child(1)::after{
+     background:linear-gradient(45deg,#ffbc00,#ff0058); 
+}
+& .box:nth-child(2)::before,& .box:nth-child(2)::after{
+      background:linear-gradient(45deg,#03a9f4,#ff0058); 
+}
+& .box:nth-child(3)::before,& .box:nth-child(3)::after{
+    background:linear-gradient(45deg,#4dff03,#00d0ff);  
+}
+}
+}

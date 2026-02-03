@@ -19,7 +19,7 @@ const ProjectList = ({ arrOfProjects, subjectTitle, onProjectClick }) => {
 {/*for general projects */}
 {generalProject && subjectData && (
 <>
-<h2 >Projects: {subjectData.title}</h2>
+<h2 >Projects: {subjectTitle}</h2>
 <div className="projects-grid">
 {subjectData.projects.map((project) => (
 <Link

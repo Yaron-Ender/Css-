@@ -1,0 +1,1 @@
+*   <Route index element={<SubjectsLandingLayout />} /> - is like the home page of the Css section

@@ -10,7 +10,9 @@ import CssSubjects from "./pages/CssSubjects";
 import SubjectsLandingLayout from "./layoutes/SubjectsLandingLayout";
 import Shadowing from "./css-projects/shadowing/Shadowing";
 import Animation from "./css-projects/animation/Animation";
+import ThreeDanimation from "./css-projects/3D-animation/ThreeDanimation";
 import DOMcordination from "./css-projects/DOM cordination/DOMcordination";
+import Background from "./css-projects/background/Background";
 import GeneralSubjects from "./css-projects/generalSubjects/GeneralSubjects";
 import SubjectPrinciples from "./pages/SubjectPrinciples";
 import ProjectList from "./pages/ProjectList";
@@ -28,7 +30,9 @@ function App() {
           <Route index element={<SubjectsLandingLayout />} />
           <Route path="shadowing" element={<Shadowing />} />
           <Route path="animation" element={<Animation />} />
+          <Route path="3D-animation" element={<ThreeDanimation />} />
           <Route path="DOMcordination" element={<DOMcordination />} />
+          <Route path='background' element={<Background />} />
           <Route path="general" element={<GeneralSubjects />} />
           <Route path="general/:subject" element={<GeneralSubjects />} />
           {/*ProjList-is the card grid of the projects */}

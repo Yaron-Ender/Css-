@@ -1,0 +1,55 @@
+.tail-3d-effect-container{
+    margin-top:300px;
+width:100%;
+position:relative;
+transform-style:preserve-3d;
+perspective:800px;
+animation:animateAllThePattern 15s ease-in-out infinite;
+& .face{
+    position: relative;
+    width:100%;
+    height:50vh;
+    background: url(./check.jpg), linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    background-size:100px 100px;
+    animation: animate 10s linear ;   
+}
+& .face-2{
+    height:100vh;   
+    transform:rotateX(70deg);
+    transform-origin:top;
+}
+& .face-1::before{
+    position: absolute;
+    bottom:0px;
+     left:0px;
+     content:"";
+     width:100%;
+     height:40%; 
+  background:linear-gradient(0deg,rgba(0,0,0,0.5),transparent);
+}
+& .face-2::before{
+    position: absolute;
+    top:0px;
+    left:0px;
+    content:"";
+    width:100%;
+    height:40%;
+    background:linear-gradient(180deg,rgba(0,0,0,0.5),transparent);   
+}
+@keyframes animateAllThePattern{
+    0%,100%{
+   transform: scale(1.6) rotate(-15deg);
+    }
+    50%{
+      transform: scale(1.6) rotate(15deg);
+    }
+  }
+  @keyframes animate{
+    0%{
+    background-position:0px;
+    }
+    100%{
+      background-position: 100px;
+      }
+    }
+}

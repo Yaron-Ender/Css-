@@ -38,7 +38,7 @@ const FlashingZigZagExpl = () => {
       <section style={{ marginBottom: '30px' }}>
         <h3 style={{ color: '#0f0', marginBottom: '15px' }}>Animation Timing</h3>
         <p>
-          The animation uses CSS custom properties (<code style={{ background: '#333', padding: '2px 6px', borderRadius: '3px' }}>--i</code>) 
+          The animation uses CSS custom properties (<code style={{ background: 'lightGray', padding: '2px 6px', borderRadius: '3px' }}>--i</code>) 
           to create staggered delays. Each diamond has a different delay value (0s, 1s, 2s, 3s), 
           causing them to light up in sequence rather than simultaneously. This creates a cascading 
           wave effect that travels along the zigzag pattern.

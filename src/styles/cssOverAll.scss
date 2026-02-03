@@ -1,0 +1,9 @@
+.css-overall{
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    & li{
+        font-size:1.2rem;
+        list-style-type: circle;
+    }
+}

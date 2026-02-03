@@ -1,0 +1,89 @@
+	• Lay-out
+		○ Normal flow layout
+			○ Containing blocks
+		○ Grid
+		○ Flexbox
+		○ @media
+		○  Position
+			○ Top,left(hiegher proirity),right,bottom-can define the size of the element(if no width/height is specify) not only the location of the element
+			○ Relative
+				□ Keep the original location in the flow layout
+			○ absolute
+				□ Location is relative to the first ancestor with posiotion relative
+				□ The element is take off from the normal flow layout
+				□ Precentages and location defined from the contaning block
+				□ If we don't spesify dimention the element size will be simaller to fit-content eventhought it block level element
+		○ Overflow
+			○ By defualt is visible
+		○  Stack context
+				□ Isolation:isolate;
+	• Media query
+		○ orientation:portrait
+		○ orientation:landscape
+		§ Hover:hover--> apply style when hover is suported
+		v Poiner:The pointer CSS media feature tests whether the user has a pointing device (such as a mouse), and if so, how accurate the primary pointing device is. There is three values
+			○ None-no input device
+			○ Fine-there is mouse to the user
+			○ Coarse- finger,touch
+		- prefers-color-scheme
+		- prefers-reduced-motion
+	• Measerment
+		○ Calculation of aspet ratio
+		○ Using calc
+			§ Control of width and height of element: min-content,max-content
+			§ https://css-tricks.com/tale-width-max-width/ - working with width and max-width
+	• Text- how the text will display inside it's container
+		○ Text-overflow -shuan CSS Tips Part 3 - Truncate Text #shorts
+		○ Writing-mode - https://24ways.org/2016/css-writing-modes/ - good article
+		○ Line-height
+		○ Direction or dir :lrt|rtl 
+		○ Word-break
+		○ hyphens
+		○ Overflow-wrap:break-word
+		○ White-space:how white-space inside the element will be controlled,(not only for text usage) we can use that property to create horizontal scroll bar see joshy course  - horizontal-overflow 
+		○ Shaped-outside: this propery together with flout property make the effect that the text was pushed by circle
+	
+	• <Image> data type
+		○ Gradient-
+		CSS Gradients Guide
+		From <https://css-tricks.com/a-complete-guide-to-css-gradients/#h-conic-gradients> 
+	• Functions
+		○ Atrr()- return the value of atrribute, the regular usage is with content property of psaudo element
+	• Targeting selectors
+		○ +,~,>
+		○ has,is.where
+	• Scroll-bar
+		○ Color-schem:light or dark
+	• Cursor
+		○   pointer-events: none; - make the element not clickable, frm ny experiane it works only with the outer element- if we have div and inside svg, so it will work only if we add that to the div, if we add it to the inner element (sng) it won’t work - I think
+	• Cosmetic
+		○ Mix-blen-mode
+		○ Filter
+		○ backDrop-filter
+	• Mesurment unit - belong to <length> data type
+		○ vmin,vmax https://css-tricks.com/fun-viewport-units/
+		○ Rem vs em(font vs width,height etc...)
+		○ vh/svh/lsh/dsh -see css course https://courses.joshwcomeau.com/css-for-js/05-responsive-css/11-viewport-units
+	• Effetcts properties
+		○ -webkit-box-reflect
+		○ Shaped-outside: to change text alignment - this is not text propery but it influance on text shape , https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside
+	• Animation
+		○ https://daneden.github.io/animate.css/
+		○ animation-play-state:running|paused
+	• 3D
+		○ Prespective
+		○ transform-style:prespective-3d
+		○ Backface-visibility
+		○ 3D rendering context- allow the element's children to be repositioned in 3D space
+	• Motion
+		○ Offest-path:path(SVG path)- just the path property is working,circle.ellipse etc.. Doesn't work
+		○ FLIP-teqniue animation -for layout animation - Framer Motion 
+	• SVG
+		○ SVG-2 let  us use some svg properties in the css- they called presentation Attribute - mdn list https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation
+		
+		§ The SVG `path` Syntax: An Illustrated Guide | CSS-Tricks - CSS-Tricks
+	
+	• CANVAS- support  only 2 primitive shapes (ractenglea and path)
+		
+	• More properties that I don’t sure where to clasified them
+		§ appearance
